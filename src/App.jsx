@@ -5,31 +5,7 @@ import "./App.css";
 import Board from "./components/Board";
 // import Square from "./components/Square";
 
-function App() {
-  const [count, setCount] = useState(0);
-
-  return (
-    <>
-      <div className="board-row">
-        <Square />
-        <Square />
-        <Square />
-      </div>
-      <div className="board-row">
-        <button className="square">4</button>
-        <button className="square">5</button>
-        <button className="square">6</button>
-      </div>
-      <div className="board-row">
-        <button className="square">7</button>
-        <button className="square">8</button>
-        <button className="square">9</button>
-      </div>
-    </>
-  );
-}
-
-const Square = () => {
+const App = () => {
   return (
     <>
       <Board />
@@ -37,4 +13,4 @@ const Square = () => {
   );
 };
 
-export default Square;
+export default App;
