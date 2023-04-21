@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.scss";
+import "./components/Square.scss";
 
 function Square({ value, onSquareClick }) {
   return (

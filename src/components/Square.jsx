@@ -1,8 +1,11 @@
 import { useState } from "react";
+import styles from "./Square.scss";
 function Square({ value, onSquareClick }) {
   return (
-    <button className="square" onClick={onSquareClick}>
-      {value}
-    </button>
+    <div className={styles.wrapper}>
+      <button className={styles.square} onClick={onSquareClick}>
+        {value}
+      </button>
+    </div>
   );
 }
